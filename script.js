@@ -17,7 +17,9 @@ const displayUserDetails = (data) => {
 	details.style.display = 'flex';
 
 	const userProfileHTML = `
-    <img src="${data.avatar_url}" alt="Avatar" width="150"/>
+    <img src="${
+			data.avatar_url
+		}" alt="Avatar" width="150"  style="border-radius: 50%;"/>
     <h2>${data.name || 'No name available'}</h2>
     <p>${data.bio || 'No bio available'}</p>
     <div class="stats">
